@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 업로드</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>이미지 업로드</h1>
+    <form action="{{ url_for('analyze_images') }}" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="model_select">모델을 고르시오:</label>
+            <select name="model_select" id="model_select">
+                <option value="iphone11">iPhone 14pro</option>
+                <option value="iphone12">iPhone 12</option>
+                <!-- 추가 모델 옵션을 여기서 정의 -->
+            </select>
+        </div>
+        <div>
+            <label for="front_image">휴대폰 앞면 이미지:</label>
+            <input type="file" name="front_image" id="front_image" required>
+        </div>
+        <div>
+            <label for="left_image">휴대폰 왼쪽면 이미지:</label>
+            <input type="file" name="left_image" id="left_image" required>
+        </div>
+        <div>
+            <label for="right_image">휴대폰 오른쪽면 이미지:</label>
+            <input type="file" name="right_image" id="right_image" required>
+        </div>
+        <div>
+            <label for="back_image">휴대폰 뒷면 이미지:</label>
+            <input type="file" name="back_image" id="back_image" required>
+        </div>
+        <div>
+            <label for="top_image">휴대폰 윗면 이미지:</label>
+            <input type="file" name="top_image" id="top_image" required>
+        </div>
+        <div>
+            <label for="bottom_image">휴대폰 아랫면 이미지:</label>
+            <input type="file" name="bottom_image" id="bottom_image" required>
+        </div>
+        <button type="submit">업로드</button>
+    </form>
+</body>
+</html>

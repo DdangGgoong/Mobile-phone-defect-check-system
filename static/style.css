@@ -1,0 +1,100 @@
+/* style.css */
+
+/* 공통 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* 이미지 업로드 페이지 스타일 */
+form {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+form select, form input[type="file"] {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 분석 결과 페이지 스타일 */
+.analysis {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.analysis img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.analysis h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.analysis p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+.analysis a {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.analysis a:hover {
+    text-decoration: underline;
+    color: #45a049;
+}

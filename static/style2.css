@@ -1,0 +1,123 @@
+/* style2.css */
+
+/* 공통 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 분석 결과 페이지 스타일 */
+.analysis {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.analysis h2 {
+    margin-bottom: 30px;
+    color: #007bff;
+    text-align: center;
+}
+
+.analysis img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.analysis p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+.total-score {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.total-score h2 {
+    margin-bottom: 20px;
+}
+
+.total-score p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.total-score h2:last-of-type {
+    margin-top: 40px;
+}
+
+.total-score p:last-of-type {
+    font-size: 20px;
+    color: #007bff;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+.total-score {
+    position: fixed;
+    top: 20px; /* 오른쪽 상단으로부터의 거리 */
+    right: 20px; /* 오른쪽으로부터의 거리 */
+    z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
+}
+
+.total-score h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Dark grey color for heading */
+}
+
+.total-score p {
+    font-size: 18px;
+    color: #4CAF50; /* Green color for total score */
+}
+
+.grade {
+    position: fixed;
+    top: 100px; /* 오른쪽 상단으로부터의 거리 */
+    right: 20px; /* 오른쪽으로부터의 거리 */
+    z-index: 1000; /* 다른 요소들 위에 오도록 설정 */
+}
+
+.grade h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Dark grey color for heading */
+}
+
+.grade p {
+    font-size: 18px;
+    color: #4CAF50; /* Green color for grade */
+}

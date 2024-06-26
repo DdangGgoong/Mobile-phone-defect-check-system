@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>분석 결과</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>분석 결과</h1>
+        <div class="analysis">
+            <h2>휴대폰 이미지</h2>
+            <div class="phone-image-container">
+                <div>
+                    <img src="{{ url_for('uploaded_file', filename=front_image) }}" alt="Front Image" width="200">
+                    <p>앞면 상태 점수: {{ defect_front }}%</p>
+                </div>
+                <div>
+                    <img src="{{ url_for('uploaded_file', filename=left_image) }}" alt="Left Image" width="200">
+                    <p>왼쪽면 상태 점수: {{ defect_left }}%</p>
+                </div>
+                <div>
+                    <img src="{{ url_for('uploaded_file', filename=right_image) }}" alt="Right Image" width="200">
+                    <p>오른쪽면 상태 점수: {{ defect_right }}%</p>
+                </div>
+                <div>
+                    <img src="{{ url_for('uploaded_file', filename=back_image) }}" alt="Back Image" width="200">
+                    <p>뒷면 상태 점수: {{ defect_back }}%</p>
+                </div>
+                <div>
+                    <img src="{{ url_for('uploaded_file', filename=top_image) }}" alt="Top Image" width="200">
+                    <p>윗면 상태 점수: {{ defect_top }}%</p>
+                </div>
+                <div>
+                    <img src="{{ url_for('uploaded_file', filename=bottom_image) }}" alt="Bottom Image" width="200">
+                    <p>아랫면 상태 점수: {{ defect_bottom }}%</p>
+                </div>
+            </div>
+        </div>
+        <div class="total-score">
+            <h2>총 상태 점수</h2>
+            <p>{{ total_score }}%</p>
+            <h2>등급</h2>
+            <p>{{ grade }}</p>
+        </div>
+        <a href="{{ url_for('upload_form') }}">다시 분석하기</a>
+    </div>
+</body>
+</html>
